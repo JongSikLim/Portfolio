@@ -1,0 +1,96 @@
+<div id="accordion" role="tablist">
+  <div class="card">
+    <div class="card-header" role="tab" id="headingOne">
+      <h5 class="mb-0 text-center">
+        <a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
+          세부사항
+        </a>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        
+        <div class="reward">
+            <p class="title">수상내역
+              <span class="sub">*마우스를 올리면 증빙사진이 보입니다. </span>
+            </p>
+
+            <ng-template #han>              
+                <img class="paper" src="/assets/images/reward/20150718.jpg" alt="">
+            </ng-template>
+            <p [ngbPopover]="han" triggers="mouseenter:mouseleave">
+                제 8회 소외된 90%와 함께하는 창의융합설계 아카데미 (한동대학교, 2015-07-18 )
+            </p>
+
+            <ng-template #cock>              
+                <img class="paper" src="/assets/images/reward/20160602.jpg" alt="">
+            </ng-template>
+            <p [ngbPopover]="cock" triggers="mouseenter:mouseleave">
+                공유가치창출형 창업 아이디어 칵테일 바 (부산광역시, 2016-06-02)
+            </p>
+
+            <ng-template #startup>              
+                <img class="paper" src="/assets/images/reward/20161208.jpg" alt="">
+            </ng-template>
+            <p [ngbPopover]="startup" triggers="mouseenter:mouseleave">
+                부산 창업선도대학 페스티벌 최우수상 (부산광역시 공학혁신센터 대학연합, 2016-12-08)
+            </p>
+
+
+        </div>
+
+        <div class="detail license">
+          <p class="title">자격증
+            <span class="sub">*마우스를 올리면 증빙사진이 보입니다. </span>
+          </p>
+          <ng-template #ocjp>
+            <img class="paper" src="/assets/images/ocjp.PNG" alt="">
+          </ng-template>
+
+          <p [ngbPopover]="ocjp" triggers="mouseenter:mouseleave">
+            Oracle Certified Professional, Java SE 6 Programmer (OCJP, 2016.02.04)
+          </p>
+        </div>
+
+        <div class="detail intern">
+          <p class="title">현장실습</p>
+          <p class="content">메인 홈페이지 및 영어 페이지 제작
+            <a href="http://www.epin.co.kr">홈페이지 바로가기</a>
+          </p>
+        </div>
+
+        <div class="detail family">
+            <p class="title">가족 사항</p>
+            <table class="table">
+              <tr>
+                <th>관계</th>
+                <th>성함</th>
+                <th>직업</th>
+                <th>소속</th>
+              </tr>
+              <tr>
+                <td>아버지</td>
+                <td>임해준</td>
+                <td>자영업(굴삭기 기사)</td>
+                <td>영진중기</td>
+              </tr>
+              <tr>
+                <td>어머니</td>
+                <td>변경숙</td>
+                <td>사회복지사</td>
+                <td>요양원</td>
+              </tr>
+              <tr>
+                <td>형</td>
+                <td>임종욱</td>
+                <td>프로그래머</td>
+                <td>넥슨 코리아</td>
+              </tr>
+            </table>
+          </div>
+      </div>
+
+    </div>
+  </div>
+</div>

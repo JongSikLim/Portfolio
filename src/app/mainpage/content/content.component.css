@@ -1,0 +1,18 @@
+:host{
+    font-weight: 500;
+    font-family: 'Jeju Gothic', sans-serif;
+
+}
+.subject{
+    font-size: 150%;
+    color:gray
+}
+.content{
+    font-size: 105%;
+}
+.pride{
+    font-size: 120%;
+    color: gray;
+    font-style: italic;
+    opacity: 0.7;
+}

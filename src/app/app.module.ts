@@ -1,8 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+
+//AppComponent에서 호출하는 컴포넌트 모듈
+import { SidebarModule } from './sidebar/sidebar.module';
+import { NavbarModule } from './navbar/navbar.module';
+import { FooterModule } from './footer/footer.module';
+
+//라우팅 및 애니메이션 모듈
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './/app-routing.module';
+//ng-bootstrap
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+//서비스
+import { OpenSidebarService } from './open-sidebar.service';
+import { FooterMainComponent } from './footer/main/main.component';
 
 
 @NgModule({
@@ -10,9 +24,18 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SidebarModule,
+    NavbarModule,
+    BrowserAnimationsModule,
+    FooterModule,
+    NgbModule.forRoot(),
+    AppRoutingModule    
   ],
-  providers: [],
+  exports : [
+    RouterModule
+  ],
+  providers: [OpenSidebarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
