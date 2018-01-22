@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { SidebarModule } from './sidebar/sidebar.module';
 import { NavbarModule } from './navbar/navbar.module';
 import { FooterModule } from './footer/footer.module';
+import { SlidepageModule } from './slidepage/slidepage.module';
 
 //라우팅 및 애니메이션 모듈
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,6 +20,8 @@ import { OpenSidebarService } from './open-sidebar.service';
 import { FooterMainComponent } from './footer/main/main.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -29,6 +32,7 @@ import { FooterMainComponent } from './footer/main/main.component';
     NavbarModule,
     BrowserAnimationsModule,
     FooterModule,
+    SlidepageModule,
     NgbModule.forRoot(),
     AppRoutingModule    
   ],
