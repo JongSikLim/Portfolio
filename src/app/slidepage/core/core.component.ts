@@ -1,8 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { SimpleSmoothScrollService } from 'ng2-simple-smooth-scroll';
-import { SimpleSmoothScrollOption } from 'ng2-simple-smooth-scroll';
-
-
 
 @Component({
   selector: 'app-slide-core',
@@ -12,7 +8,7 @@ import { SimpleSmoothScrollOption } from 'ng2-simple-smooth-scroll';
 export class SlideCoreComponent implements OnInit {
 
 
-  constructor(private smooth: SimpleSmoothScrollService) { }
+  constructor() { }
   
   ngOnInit() {
     
