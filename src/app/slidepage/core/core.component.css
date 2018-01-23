@@ -10,6 +10,10 @@
     background-color: green;
     color: beige;
 }
+.slide4{
+    background-color: rgb(211, 207, 207);
+    color: rgb(51, 51, 51);
+}
 .fp-tableCell{
     display: table-cell;
     vertical-align: middle;
@@ -24,3 +28,24 @@
     font-size: 500%;    
 }
 
+#fp-nav{
+    position: fixed;
+    z-index: 100;
+    top: 50% !important;
+    margin-top: 32px;
+    opacity: 1;   
+
+}
+
+
+/* .fp-slidesContainer{
+    width: 400%;
+    transition: all 1000ms ease;
+    transform: translate3d(0px, 0px, 0px);
+    float: left;
+    position: relative;
+}
+.slide.fp-slide{
+    height: 100%;
+    display: block;
+} */

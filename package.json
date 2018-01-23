@@ -24,6 +24,7 @@
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.9",
     "core-js": "^2.4.1",
     "jquery": "^3.2.1",
+    "ngx-bootstrap": "^2.0.1",
     "ngx-fullpage": "^4.0.6",
     "ngx-popover": "0.0.16",
     "rxjs": "^5.5.2",

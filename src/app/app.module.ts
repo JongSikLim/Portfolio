@@ -19,6 +19,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { OpenSidebarService } from './open-sidebar.service';
 import { FooterMainComponent } from './footer/main/main.component';
 
+import { MnFullpageModule } from 'ngx-fullpage';
 
 
 
@@ -34,6 +35,7 @@ import { FooterMainComponent } from './footer/main/main.component';
     FooterModule,
     SlidepageModule,
     NgbModule.forRoot(),
+    MnFullpageModule.forRoot(),
     AppRoutingModule    
   ],
   exports : [

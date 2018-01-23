@@ -1,21 +1,19 @@
-
-<div mnFullpage>
-    <div class="section welcome-section `ection fp-table slide1" data-anchor="slide1">
-        <div class="fp-tableCell align-items-center">
-            <p class="title">테스트</p>
-        </div>
+<div mnFullpage 
+[mnFullpageNavigation]="true" 
+[mnFullpageKeyboardScrolling]="true" 
+[mnFullpageSlidesNavigation]="false" 
+[mnFullpageControlArrows]="false"
+    [mnFullpageSlidesNavPosition]="bottom">
+    <div id="section1" data-anchor="title" class="section fp-section fp-table slide1">
+        <app-title></app-title>
     </div>
-    <div class="section welcome-section fp-section fp-table slide2">
-        <div class="fp-tableCell align-items-center">
-            <p class="title">테스트</p>
-        </div>
+    <div id="section2" data-anchor="slide1" class="section fp-section fp-table slide2">
+        <app-slide1></app-slide1>
     </div>
-    <div class="section welcome-section fp-section fp-table slide3">
-        <div class="fp-tableCell align-items-center">
-            <p class="title">테스트</p>
-        </div>
+    <div id="section3" data-anchor="slide2" class="section fp-section fp-table slide3">
+        <app-slide2></app-slide2>
     </div>
-
-    
+    <div id="section4" data-anchor="slide3" class="section fp-section fp-table slide4">
+       <app-resume></app-resume>     
+    </div>
 </div>
-
