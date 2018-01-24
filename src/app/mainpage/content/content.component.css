@@ -12,9 +12,6 @@
     font-style: italic;
     opacity: 0.7;
 }
-.card{
-    margin-top: 20px;
-}
 .title{
     font-size: 120%;
 }
@@ -22,14 +19,4 @@ span.sub{
     font-size: 60%;
     color:lightseagreen;
     font-style: italic;
-}
-.detail{
-    margin-top: 50px;
-}
-.paper{
-    float:left;
-    height: 600px;
-}
-h3{
-    color: black;
 }

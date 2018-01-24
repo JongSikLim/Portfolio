@@ -3,12 +3,13 @@
     color: brown;
 }
 .slide2{
-    background: black;
-    color: white;
+    background: rgb(19, 69, 164);
+    
+    
 }
 .slide3{
-    background-color: green;
-    color: beige;
+    background-color: rgb(8, 177, 114);
+    
 }
 .slide4{
     background-color: rgb(211, 207, 207);
@@ -21,31 +22,6 @@
     height: 100%;
     
 }
-.section{
-    text-align: center;
-}
 .title{
     font-size: 500%;    
 }
-
-#fp-nav{
-    position: fixed;
-    z-index: 100;
-    top: 50% !important;
-    margin-top: 32px;
-    opacity: 1;   
-
-}
-
-
-/* .fp-slidesContainer{
-    width: 400%;
-    transition: all 1000ms ease;
-    transform: translate3d(0px, 0px, 0px);
-    float: left;
-    position: relative;
-}
-.slide.fp-slide{
-    height: 100%;
-    display: block;
-} */
