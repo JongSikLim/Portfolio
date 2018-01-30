@@ -1,15 +1,12 @@
-.title-text{
-    font-size: 300%;
-
-}
 .full-page{
+    background-color: rgb(226, 102, 102);
+    height: 100%;
     padding-top: 100px;
 }
 img{
     width: 100%;
 }
-
-.title{    
+.title{
     font-size: 350%;
     color: white;
 }
@@ -17,18 +14,10 @@ img{
     font-size: 110%;
     color: white;
 }
-.left{
-    text-align: left;
-}
-.right{
-    text-align: right;
-}
-
-.link{
-    margin-top: 10px;
+div.link {
+    margin-top: 50px;
     text-align: center;
-    
 }
-div.link a{
-    color: white;
+a{
+    color:white;
 }

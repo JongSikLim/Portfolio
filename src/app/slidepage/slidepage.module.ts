@@ -11,6 +11,7 @@ import { TitleComponent } from './title/title.component';
 
 import { MnFullpageModule } from 'ngx-fullpage';
 import { ResumeComponent } from './resume/resume.component';
+import { Slide3Component } from './slide3/slide3.component';
 
 
 @NgModule({
@@ -23,7 +24,7 @@ import { ResumeComponent } from './resume/resume.component';
   declarations: [
     Slide1Component,
     Slide2Component, 
-    SlideCoreComponent, TitleComponent, ResumeComponent
+    SlideCoreComponent, TitleComponent, ResumeComponent, Slide3Component
 
   ],
   

@@ -1,9 +1,22 @@
-.fullpage{
+.fullpage{    
     height: 100%;    
+    background-color: #222;
+    color: white;
     
 }
-.title-text{
-    font-size: 300%;
-
+p{
+    text-align: center;
 }
 
+.title-kor{
+    font-size: 300%;
+}
+.title-kor-sub{
+    font-size: 100%;
+}
+.title-eng{
+    font-size: 70%;
+}
+.title-eng-sub{
+    font-size: 70%;
+}

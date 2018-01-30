@@ -3,10 +3,10 @@
 
   <div class="row align-items-center">
     <div class="col-1"></div>
-    <div class="col-4">
+    <div [@image-field]="loadState" class="col-4">
       <img src="/assets/images/grad/home.JPG" alt="">
     </div>
-    <div class="col-5">
+    <div [@text-field]="loadState" class="col-5">
       <p class="title left">
         CVS Disposal Product Notification Service
       </p>
@@ -20,7 +20,7 @@
 
 
 
-  <div class="row link">
+  <div [@link-1]="loadState" class="row link">
     <div class="col-12">
       <a href="https://graduateproject-61cd9.firebaseapp.com/login">페이지로 이동</a>
     </div>

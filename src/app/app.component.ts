@@ -40,7 +40,7 @@ export class AppComponent {
       
     this.subscription.unsubscribe();
   }
-  
+  changeLis
   
 
   toggleMenu(){  
