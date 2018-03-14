@@ -19,7 +19,7 @@ export class SlideCoreComponent implements OnInit {
 
   }
   check(){
-    console.log(this.someProperty);
+    //console.log(this.someProperty);
   }
 }
 

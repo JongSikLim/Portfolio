@@ -24,9 +24,7 @@ export class TitleComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.greetingState);
     this.greetingState = 'load';
-    console.log(this.greetingState);
   }
 
 }

@@ -1,18 +1,17 @@
-<div >
-  <p class="text-center">
-    <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#reward" aria-expanded="false" aria-controls="reward">
+<div class="row justify-content-center">
+  <div id="accordion"  role="tablist" aria-multiselectable="true">
+  
+    <button (click)="open1()" class="btn btn-dark" id="collapse1" data-toggle="collapse" data-target="#reward" data-parent="#collapse-group">
       교외수상내역
     </button>
-    <button class="btn btn-dark" data-toggle="collapse" data-target="#license" aria-expanded="false" aria-controls="license">
-      자격증&현장실습</button>
-    <button class="btn btn-dark" 
-      data-toggle="collapse" 
-      data-target="#family" 
-      aria-expanded="false" 
-      aria-controls="family">
-        가족사항
+    <button (click)="open2()" class="btn btn-dark" id="collapse2" data-toggle="collapse" data-target="#license" data-parent="#collapse-group">
+      자격증&현장실습
     </button>
-  </p>
+    <button (click)="open3()" class="btn btn-dark" id="collapse3" data-toggle="collapse" data-target="#family" data-parent="#collapse-group">
+      가족사항
+    </button>
+  </div>
+
 </div>
 
 
@@ -48,60 +47,58 @@
 </div>
 
 <div class="collapse" id="license">
-    <div class="card card-body">
-        <div class="license">
-            <p class="title">자격증
-              <span class="sub">*마우스를 올리면 증빙사진이 보입니다. </span>
-            </p>
-            <ng-template #ocjp>
-              <img class="paper" src="/assets/images/ocjp.PNG" alt="">
-            </ng-template>
-        
-            <p [ngbPopover]="ocjp" triggers="mouseenter:mouseleave">
-              Oracle Certified Professional, Java SE 6 Programmer (OCJP, 2016.02.04)
-            </p>
-          </div>
-          <div class="detail intern">
-              <p class="title">현장실습</p>
-              <p class="content">메인 홈페이지 및 영어 페이지 제작
-                <a href="http://www.epin.co.kr">홈페이지 바로가기</a>
-              </p>
-          </div>
-    </div>
-</div>
+  <div class="card-body">
+    <div class="license">
+      <p class="title">자격증
+        <span class="sub">*마우스를 올리면 증빙사진이 보입니다. </span>
+      </p>
+      <ng-template #ocjp>
+        <img class="paper" src="/assets/images/ocjp.PNG" alt="">
+      </ng-template>
 
-<div id="family" class="collapse">
-  <div class="card card-body">
-      <div class="family">
-          <p class="title">가족 사항</p>
-          <table class="table">
-            <tr>
-              <th>관계</th>
-              <th>성함</th>
-              <th>직업</th>
-              <th>소속</th>
-            </tr>
-            <tr>
-              <td>아버지</td>
-              <td>임해준</td>
-              <td>자영업(굴삭기 기사)</td>
-              <td>영진중기</td>
-            </tr>
-            <tr>
-              <td>어머니</td>
-              <td>변경숙</td>
-              <td>사회복지사</td>
-              <td>요양원</td>
-            </tr>
-            <tr>
-              <td>형</td>
-              <td>임종욱</td>
-              <td>프로그래머</td>
-              <td>넥슨 코리아</td>
-            </tr>
-          </table>
-        </div>
+      <p [ngbPopover]="ocjp" triggers="mouseenter:mouseleave">
+        Oracle Certified Professional, Java SE 6 Programmer (OCJP, 2016.02.04)
+      </p>
+    </div>
+    <div class="detail intern">
+      <p class="title">현장실습</p>
+      <p class="content">메인 홈페이지 및 영어 페이지 제작
+        <a href="http://www.epin.co.kr">홈페이지 바로가기</a>
+      </p>
+    </div>
   </div>
 </div>
 
-  
+<div id="family" class="collapse">
+  <div class=" card-body">
+    <div class="family">
+      <p class="title">가족 사항</p>
+      <table class="table">
+        <tr>
+          <th>관계</th>
+          <th>성함</th>
+          <th>직업</th>
+          <th>소속</th>
+        </tr>
+        <tr>
+          <td>아버지</td>
+          <td>임해준</td>
+          <td>자영업(굴삭기 기사)</td>
+          <td>영진중기</td>
+        </tr>
+        <tr>
+          <td>어머니</td>
+          <td>변경숙</td>
+          <td>사회복지사</td>
+          <td>요양원</td>
+        </tr>
+        <tr>
+          <td>형</td>
+          <td>임종욱</td>
+          <td>프로그래머</td>
+          <td>넥슨 코리아</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

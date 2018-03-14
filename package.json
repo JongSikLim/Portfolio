@@ -28,6 +28,7 @@
     "ngx-fullpage": "^4.0.6",
     "ngx-popover": "0.0.16",
     "rxjs": "^5.5.2",
+    "web-animations-js": "^2.3.1",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {

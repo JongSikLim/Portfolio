@@ -2,25 +2,55 @@
   <div class="full-page">
 
     <div class="row align-items-center">
-      <div class="col-1"></div>
+      <div class="col-2"></div>
       <div [@image-field]="loadState" class="col-4">
         <img src="/assets/images/starter/main.JPG" alt="">
       </div>
-      <div [@image-field]="loadState"  class="col-5">
+      <div [@image-field]="loadState"  class="col-4">
         <p class="title left">
           Korea Kickstater 
         </p>
         
         <p class="description left">
-          MeteorJS │ React │ MongoDB
+          kickstarter를 벤치마킹한 웹사이트입니다.
+          <br> 대학교 2학년시절 처음으로 웹 프로그래밍을 시작하여 제작한 사이트입니다.
+          <br> React기반 Meteor framework를 활용하여 제작하였습니다.
+          <br><br>
+          React │ MeteorJS │ React │ MongoDB
         </p>
       </div>
       <div class="col-1"></div>
     </div>
+    
+    <div class="row align-items-center airbnb">
+      <div class="col-3"></div>
+      
+      <div [@image-field]="loadState"  class="col-4">
+        <p class="title left">
+          Airbnb Benchmark
+        </p>
+        
+        <p class="description right">
+          Airbnb를 벤치마킹한 웹사이트입니다.
+          <br>대학교 4학년시절 Angular CLI, Typescript를 이용하여 제작하였습니다.
+          <br>처음으로 다음 지도 API를 사용한 페이지입니다.
+          <br><br>
+          Angular-CLI │ Firebase │ Daum Maps API
+        </p>
+      </div>
+
+      <div [@image-field]="loadState" class="col-4">
+        <img src="/assets/images/airbnb/airbnb.jpg" alt="">
+      </div>
+      
+    </div>
   
+
     <div [@link-1]="loadState" class="row link">
       <div class="col-12">
-        <a href="http://koreastarter.herokuapp.com/home">페이지로 이동</a>
+        <a href="https://koreastarter.herokuapp.com/home">Korea Kickstarter 페이지로 이동</a>
+        <span class="url-bar">│</span>
+        <a href="https://airbnb-bench.firebaseapp.com/">Airbnb Benchmark 페이지로 이동</a>
       </div>
     </div>
   </div>
